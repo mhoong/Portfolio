@@ -1,4 +1,3 @@
-console.log('connected');
 //Cat Modal
 //W3schools
 const catModal = document.getElementById('catModal');
