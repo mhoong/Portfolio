@@ -1,4 +1,5 @@
 body {
+    font-family: 'Roboto', sans-serif;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: linear-gradient(rgba(128, 0, 128, 0.837), white);
@@ -30,9 +31,7 @@ h4 {
     color:hsla(0, 0%, 100%, 0.95);
 }
 
-/* home elements */
-
-
+/* home */
 #homeHeader {
     text-align: center;
     margin: 10% 0% 6% 0%;
@@ -80,10 +79,8 @@ h4 {
 }
 
 embed {
-    height: 500px;
-    width: auto;
-    
-    
+    height: 450px;
+    width: auto; 
 }
 
 #catButton{
@@ -116,7 +113,6 @@ embed {
     margin: 7% 0 0 15%;
 }
 
-
 .mePic {
     position: absolute;
     max-width: 100%;
@@ -125,25 +121,25 @@ embed {
     margin: 3% 8% 3% 0%;
 }
 
-
 /* The Close Button */
 .close {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
-  }
+}
   
-  .close:hover,
-  .close:focus {
+.close:hover,
+.close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
-  }
+}
 
 /* Resume */
 #resume p, #resume li {
-    max-width: 60%;
+    max-width: 75%;
+    font-size: 110%;
 }
 
 #resume ul li {
@@ -156,9 +152,14 @@ embed {
 
 }
 
+#resume {
+    font-family: Roboto Mono;
+    padding: 40px 0 0 150px;
+}
+
 /* Projects */
 .filler {
-    max-width: 40%;
+    max-width: 32%;
     max-height: auto;
     padding: 1.5%;
     margin-left: auto;
@@ -166,18 +167,17 @@ embed {
 }
 
 #projectsFiller {
-    top: 100%;
-    left:55%;
-    transform: translate(-50%,-50%);
-    position: absolute;
+    position: relative;
+    left: 210px;
 }
 
 /* mobile */
 @media (max-width: 500px) {
+    /* home */
     .nav li{
         font-size: 100%;
-        
     }
+
     #homeHeader {
         text-align: center;
         margin: 20% 0% 10% 0%;
@@ -195,11 +195,23 @@ embed {
         margin: 10% 0 0 0;
     }
 
-    .mePic {
-        position: relative;
-        float: none;
-        align-content: center;
-        margin: none;
+    embed {
+        height: 310px;
+    }
+
+    /* resume */
+    #resume {
+        padding: 2px 0 0 20px;
+    }
+
+    /* projects */
+    #projectsFiller {
+        left: 55px;
+        margin-top: 30px;
+    }
+
+    .filler {
+        max-width: 70%;
     }
 }
 

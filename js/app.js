@@ -19,7 +19,6 @@ window.onclick = function(event) {
   }
 }
 
-
 //home link
 const home = document.getElementById('homeLink');
 homeAlert = () => {
